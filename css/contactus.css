@@ -1,0 +1,83 @@
+
+/*  */
+.main{
+  display:flex;
+}
+
+.contactform {
+    width: 50%;
+    padding: 40px;
+    background: #fff;
+    
+}
+  .contactform h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+  .contactform .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+  .contactform .input-box input,
+  .contactform .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+  .contactform .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+  .contactform .input-box input:focus ~ span,
+  .contactform .input-box input:valid ~ span,
+  .contactform .input-box textarea:focus ~ span,
+  .contactform .input-box textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+  .contactform .input-box input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+ }
+.info{
+    width: 50%;
+    padding: 5%;
+}
+.contactheader{
+    font-size: 30px;
+    color: rgb(248, 167, 60);
+    font-family: "Baloo Bhai", cursive;
+}
+.contactdescription{
+    text-decoration: none;
+}
+@media (max-width:950px){
+  .main{
+    flex-direction: column;
+  }
+  .contactform{
+    width: 100%;
+  }
+  .info{
+    width:100%;
+  }
+}
